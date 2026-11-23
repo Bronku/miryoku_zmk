@@ -367,9 +367,12 @@ jobs:
           done
           test "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' && cp "${GITHUB_WORKSPACE}/zmk/app/build/zephyr/.config" "${{ steps.main.outputs.artifact_dir }}"
           echo "::endgroup::"
+      - name: Safe artifact name
+        id: artname
+        run: echo "name=$(echo '${{ inputs.board }}' | tr '/' '_')" >> "$GITHUB_OUTPUT"
       - name: upload
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.main.outputs.run_name }}
+          name: ${{ steps.artname.outputs.name }}
           path: ${{ steps.main.outputs.artifact_dir }}
 
