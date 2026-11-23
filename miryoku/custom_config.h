@@ -5,15 +5,15 @@
 #define MIRYOKU_NAV_INVERTEDT
 #define MIRYOKU_CLIPBOARD_WIN   // Undo/Redo as Ctrl+Z / Ctrl+Y; remove if you're not on Windows
 
-// Gaming layer: replaces the Tap layer.
-// Entered from a left-hand layer (hold its thumb, tap the ring-finger top-row key),
-// left with &to U_BASE on the top-left pinky.
+// Gaming layer (left hand): replaces the Tap layer.
+// Entered with a layer thumb held plus the Tap key on the feature row (see Miryoku docs),
+// left with &to U_BASE on the top-right pinky.
+// Fingers rest on S/D/F but send A/S/D, with W above D: WASD with the hand shifted one key right.
+// The left pinky column is free for Esc / Shift / Ctrl, thumbs are Alt / Space / Enter.
 // 40 entries: 3 rows of 10 (left 5 + right 5), then a thumb row of 10:
 // 2 unused, 3 left thumbs, 3 right thumbs, 2 unused.
-// Before using this, compare with the original MIRYOKU_ALTERNATIVES_TAP_QWERTY block in
-// miryoku/miryoku_babel/miryoku_layer_alternatives.h and match its entry style.
 #define MIRYOKU_LAYER_TAP \
-&to U_BASE, &kp N1, &kp N2, &kp N3, &kp N4,     &kp R,   &kp Q, &kp W, &kp E, &kp ESC,   \
-&none,      &none,  &none,  &none,  &none,      &kp F,   &kp A, &kp S, &kp D, &kp LSHFT, \
-&none,      &none,  &none,  &none,  &none,      &kp TAB, &kp Z, &kp X, &kp C, &kp LCTRL, \
-&none, &none,  &none, &none, &none,  &kp SPACE, &kp LALT, &kp ENTER,  &none, &none
+&kp ESC,    &kp Q, &kp W, &kp E, &kp R,      &kp N1, &kp N2, &kp N3, &kp N4, &to U_BASE, \
+&kp LSHFT,  &kp A, &kp S, &kp D, &kp F,      &none,  &none,  &none,  &none,  &none,      \
+&kp LCTRL,  &kp Z, &kp X, &kp C, &kp V,      &none,  &none,  &none,  &none,  &none,      \
+&none, &none,  &kp LALT, &kp SPACE, &kp ENTER,  &none, &none, &none,  &none, &none
