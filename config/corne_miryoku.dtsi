@@ -5,4 +5,3 @@
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
 
-CONFIG_ZMK_POINTING=y
