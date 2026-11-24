@@ -1,7 +1,5 @@
 #include "corne_miryoku.dtsi"
 
-CONFIG_ZMK_POINTING=y
-
 &kscan0 {
         row-gpios
                 = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>

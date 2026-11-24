@@ -1,7 +1,5 @@
 #include "corne_miryoku.dtsi"
 
-CONFIG_ZMK_POINTING=y
-
 &kscan0 {
         col-gpios
                 = <&pro_micro 14 GPIO_ACTIVE_HIGH>
