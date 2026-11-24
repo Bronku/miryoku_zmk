@@ -2,6 +2,8 @@
 
 #define MIRYOKU_ALPHAS_QWERTY
 #define MIRYOKU_EXTRA_QWERTY
+#define MIRYOKU_NAV_INVERTEDT
+
 
 // ---------------------------------------------------------------------------
 // Gaming layer: replaces the Tap layer.
